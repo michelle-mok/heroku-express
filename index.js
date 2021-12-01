@@ -1,7 +1,8 @@
 import express from 'express';
-
+import pg from 'pg';
 // ...
 
+const { Pool } = pg;
 let pgConnectionConfigs;
 
 // test to see if the env var is set. Then we know we are in Heroku
